@@ -1,0 +1,170 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4A4947;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    margin: 10px 0 5px;
+    font-size: 2em;
+    text-align: center;
+    padding: 25px;
+    animation: slideIn 1s ease-out;
+}
+
+.tagline {
+    font-weight: bold;
+    color: #090909;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+}
+
+.bio, .Intereses, footer {
+    margin: 20px 0;
+    animation: fadeUp 1s ease-out 0.5s;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    border-bottom: 2px solid #1e201e;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #0b0c0b;
+    text-align: center;
+}
+
+p, ol {
+    line-height: 1.8;
+    font-weight: 250;
+    color: black;
+    text-align: justify;
+    margin: 35px;
+}
+
+ol {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.redes {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.redes li {
+    display: inline-block;
+}
+
+.logo-red, .logo-red1 {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+    align-items: center;
+}
+
+.logo-red:hover, .logo-red1:hover {
+    transform: scale(1.5) rotate(10deg);
+    opacity: 0.8;
+    animation: bounce 0.5s;
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    float: right;
+    margin-right: 55px;
+    border: #666;
+    margin-top: 80px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.foto:hover {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.datos p {
+    line-height: 1.8;
+    color: black;
+    text-align: justify;
+    margin: 0.5px;
+}
+
+.habilidades ol {
+    display: inline;
+    margin: 1px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
